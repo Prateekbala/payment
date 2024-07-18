@@ -1,16 +1,12 @@
 "use client"
 import React from 'react'
-import { signOut } from "next-auth/react"
-
-
+import { Component } from '../../../@/components/views'
 
 function page() {
- 
 
   return (
     <div>
-      Dashboard
-      <button onClick={() => signOut()}>Sign out</button>
+     <Component/>
     </div>
   )
 }

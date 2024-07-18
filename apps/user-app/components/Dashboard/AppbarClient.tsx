@@ -54,7 +54,7 @@ export function AppbarClient() {
 
   <div className="hidden sm:flex items-center justify-end space-x-4">
   {session ? (
-          <Button variant="contained" className="px-4 py-2 bg-[#de8cde] text-white" onClick={async () => { signOut() }}>Sign-Out</Button>
+          <Button variant="contained" className="px-4 py-2 bg-[#de8cde] text-white" onClick={async () => { signOut({ callbackUrl: "http://localhost:3001" }) }}>Sign-Out</Button>
         ) : (
           <Button variant="contained" className="px-4 py-2 bg-[#de8cde] text-white" onClick={async () => { signIn() }}>Sign-In</Button>
         )}

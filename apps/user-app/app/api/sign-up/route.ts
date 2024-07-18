@@ -48,17 +48,17 @@ export async function POST(req:Request){
       }
       console.log("Error is in sing-up /api 1:")
 
-    // const emailResponse=await sendVerificationEmail(email,verifycode);
-    //     console.log(emailResponse);
-    //     if (!emailResponse.success) {
-    //       return Response.json(
-    //         {
-    //           success: false,
-    //           message: emailResponse.message,
-    //         },
-    //         { status: 500 }
-    //       );
-    //     }
+    const emailResponse=await sendVerificationEmail(email,verifycode);
+        console.log(emailResponse);
+        if (!emailResponse.success) {
+          return Response.json(
+            {
+              success: false,
+              message: emailResponse.message,
+            },
+            { status: 500 }
+          );
+        }
         return Response.json(
           {
             success: true,

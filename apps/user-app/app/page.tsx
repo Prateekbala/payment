@@ -2,7 +2,7 @@
 import React from 'react'
 import { TypewriterEffectDemo } from '../@/components/typewriter'
 import Image from 'next/image'
-import background from "../img/img-2.png"
+import backgroundimg from "../img/desktop 3.png"
 import { Button } from '@nextui-org/react'
 import { useRouter } from 'next/navigation';
 function page() {
@@ -14,7 +14,7 @@ function page() {
     <div className="relative w-full h-screen">
     <div className="absolute inset-0">
       <Image
-        src={background}
+        src={backgroundimg}
         alt="background-image"
         layout="fill"
         

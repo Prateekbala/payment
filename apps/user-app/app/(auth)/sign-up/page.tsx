@@ -74,10 +74,10 @@ async function onSubmit(data: z.infer<typeof signUpSchema>) {
   }
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-800">
-    <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
+    <div className="w-full max-w-md p-3 space-y-4 bg-white rounded-lg shadow-md">
       <div className="text-center">
         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
-          Join Quick Pay
+          Join QuickPay
         </h1>
         <p className="mb-4">Pay Secure and Fast</p>
       </div>
